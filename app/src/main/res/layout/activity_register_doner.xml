@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkred"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_person_outline_24" />
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="serif"
+                android:text="User Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Name"
+            android:textColor="@color/darkred"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/displayGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Gender"
+            android:textColor="@color/darkred"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/displayBloodType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Blood Type"
+            android:textColor="@color/darkred"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/displayPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Phone Number"
+            android:textColor="@color/darkred"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/displayEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Email Address"
+            android:textColor="@color/darkred"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="I have not drank alcohol in last 24 hours"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/checkTattoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="serif"
+        android:text="I have not gotten a tattoo in last 3 months"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/checkSmoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="serif"
+        android:text="I have not smoked in last 24 hours"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/checkMedication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="serif"
+        android:text="I am not on any medication"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/darkred"
+        android:fontFamily="serif"
+        android:text="Register for Donation"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

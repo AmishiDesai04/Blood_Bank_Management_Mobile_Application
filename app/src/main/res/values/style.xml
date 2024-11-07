@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Define your custom spinner style -->
+        <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner.DropDown">
+            <item name="android:popupBackground">@color/lightblue</item> <!-- Dropdown background color -->
+            <item name="android:backgroundTint">@color/lightblue</item> <!-- Spinner background color -->
+        </style>
+
+</resources>

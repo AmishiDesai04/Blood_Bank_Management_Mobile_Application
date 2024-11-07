@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/darkred">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo"
+            android:contentDescription="App Logo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Profile Icon"
+                android:src="@drawable/baseline_person_outline_24" />
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:text="User Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:fontFamily="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Search Hospitals Near You"
+        android:textColor="@color/darkred"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="serif"
+        android:hint="Enter Location Here"
+        android:textColor="@color/darkred"
+        android:textColorHint="@color/darkblue" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Search"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/darkred" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

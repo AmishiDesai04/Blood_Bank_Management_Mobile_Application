@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkred"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_person_outline_24" />
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="serif"
+                android:text="User Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cream"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/donatedBloodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
+            android:text="Donated Blood Report"
+            android:textColor="@color/darkred"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/donatedBloodTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkred"
+                    android:padding="10dp"
+                    android:text="Donated Blood Count"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/bloodRequestsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
+            android:text="Blood Requests Report"
+            android:textColor="@color/darkred"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/requestsTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkred"
+                    android:padding="10dp"
+                    android:text="Requested Blood Type"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkred"
+                    android:padding="10dp"
+                    android:text="Requested Blood Count"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
